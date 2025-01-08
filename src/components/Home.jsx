@@ -7,7 +7,7 @@ function Home() {
 
     return (
         <div> 
-            this is home page
+            this is home pagexs,
         </div>
 
     )
