@@ -7,8 +7,7 @@ function Home() {
 
     return (
         <div> 
-            ddjjdjd
-            assalamualikum s
+            this is home page
         </div>
 
     )
