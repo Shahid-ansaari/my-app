@@ -1,47 +1,47 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import img from './35082661.jpg';
+import { VscColorMode } from "react-icons/vsc";
+import { IoIosSearch } from "react-icons/io";
+
+
 
 function Navbar() {
   return (
-    // <nav className="flex flex-col md:flex-row justify-between items-center p-1 bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg text-white">
-    <nav className="flex flex-col md:flex-row justify-between items-center p-1 bg-gray-200">
-      {/* Logo Section */}
-      <NavLink to="/" className="flex items-center mb-4 md:mb-0 ml-20">
-        <img
-          src={img}
-          alt="logo"
-          // className="h-10 w-10 rounded-full border-2 border-white mr-3 shadow-md"
-          className="h-9 w-9 rounded-full mr-1 shadow-md"
-        />
-        {/* <p className="text-2xl md:text-3xl font-bold  tracking-wide">Preneurpersuiter</p> */}
-        <p className="text-xl md:text-3xl  tracking-wide">Aspirepreneur</p>
-      </NavLink>
 
-      {/* Navigation Links */}
-      <div className="flex flex-wrap justify-center md:justify-end gap-6 text-lg md:text-xl font-normal mr-20">
-        <NavLink to="/bsuinesscase" className="hover:underline hover:text-yellow-300 transition duration-200">
-         BusinessCases
-        </NavLink>
-        <NavLink to="/" className="hover:underline hover:text-yellow-300 transition duration-200">
-          {/* Businessman Speeches */}
-          Speeches
-        </NavLink>
-        <NavLink to="/" className="hover:underline hover:text-yellow-300 transition duration-200">
-          Leadership
-        </NavLink>
-        <NavLink to="/" className="hover:underline hover:text-yellow-300 transition duration-200">
-           Management
-          {/* Business Management */}
-        </NavLink>
-        {/* <NavLink to="/" className="hover:underline hover:text-yellow-300 transition duration-200">
-          Business Info
-        </NavLink> */}
-        <NavLink to="/s" className="hover:underline hover:text-yellow-300 transition duration-200">
-          Guidance
-        </NavLink>
-      </div>
-    </nav>
+
+    <div className=' sticky top-0 '>
+      <header className=' flex flex-row w-full h-fit bg-green-800   text-white justify-center items-center '>
+
+
+          <Link to={"/"} className='flex ' target='_top'>
+            {/* <img src={img} alt="logo" width={30} height={5} loading='lazyloading' className=' p-1' /> */}
+            <p className=' text-2xl  tracking-wide cursor-pointer p-2 text-orange-200'>AspirePreneure</p>
+          </Link>
+
+      </header>
+
+      <nav className=' flex flex-row items-start bg-black bg-opacity-95 text-white  p-1 overflow-x-auto '>
+        <ul className=' flex gap-6 tracking-wide  text-xl text-orange-200 font-normal   '>        
+          <li>
+            <NavLink to={"/businesscase"} target='_top' >BusinessCase</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/speeches"} target='_top'>Speeches</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/leadership"} target='_top'>Leadership</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/managment"} target='_top'>Management</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/guidance"} target='_top'>Guidance</NavLink>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
   );
 }
 
