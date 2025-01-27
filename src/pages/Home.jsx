@@ -11,7 +11,7 @@ import { HashLink } from 'react-router-hash-link'
 function Home() {
   return (
     
-    <div className=' p-2 mt-24  text-[20px] border-r-2  h-[2000px] md:pl-8     lg:w-10/12 lg:pl-16    '>
+    <div className=' p-2 mt-24  text-[15px] border-r-2  h-[2000px] md:pl-8     lg:w-10/12 lg:pl-16    '>
       {/* <h2 className='text-[32px] font-normal my-3 pr-8'>
       If you aspire to become a successful businessman and build a thriving career, this platform is the perfect starting point for you
       </h2> */}
